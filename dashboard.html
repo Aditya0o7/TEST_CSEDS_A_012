@@ -15,20 +15,23 @@
             <input type="text" id="username" required>
             <label for="password">Password</label>
             <input type="password" id="password" required>
-            <button type="button" onclick="login()">Login</button>
+            <button id = "fetch" type="button" onclick="login()">Login</button>
         </form>
     </div>
 
     <div id="dashboard-section" style="display: none;">
-        <h1>Dashboard</h1>
-        <p>Welcome <span id="userName"></span></p>
+        <h1 class="heading">Dashboard</h1>
+        <h1 id="sub">Welcome <span id="userName"></span></h1></p>
+        <button id="fetch" onclick="fetchdata()">Fetch Top 10 Git Users</button>
         <select id="userDropdown" onchange="showPanel()">
-            <option value="Abhishek">Abhishek</option>
-            <option value="Ravi">Ravi</option>
-            <option value="Suman">Suman</option>
-            <option value="Tina">Tina</option>
+            <option value="Default">Default</option>
+            <option value="Alphabetical">Alphabetical</option>
         </select>
-        <button onclick="logout()">Logout</button>
+        <div id="top">
+
+        </div>
+
+        <button id="out" onclick="logout()">Logout</button>
     </div>
 
     <script src="script.js"></script>

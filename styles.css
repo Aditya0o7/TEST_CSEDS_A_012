@@ -24,7 +24,7 @@ label, input, button, select {
 }
 
 button {
-    background-color: #28a745;
+    
     color: white;
     border: none;
     padding: 8px;
@@ -33,7 +33,13 @@ button {
     transition: scale 0.2s ease;
 
 }
-    
+#fetch{
+    background-color: #28a745;
+}
+
+#out{
+    background-color: #dc3545;
+}
 
 button:hover {
     background-color: #218838;
@@ -48,4 +54,25 @@ select {
 }
 input{
     border-radius: 5px;
+}
+
+li{
+    list-style-type: none;
+    transition: all 0.2s;
+    
+}
+li:hover{
+    scale: 1.02;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    color: #28a745;
+    
+}
+.heading{
+    background-color: yellow;
 }
