@@ -47,7 +47,9 @@ button:hover {
     
 }
 
-
+input{
+    height: 20px;
+}
 
 select {
     padding: 5px;
